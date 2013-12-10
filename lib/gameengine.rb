@@ -1,4 +1,4 @@
-class Game
+class GameEngine
   attr_reader :player, :computer
 
   def initialize
@@ -24,15 +24,15 @@ class Game
 
   def win
     player.score += 1
-    "You win!"
+    "Congratulations, you won!"
   end
 
   def lose
     computer.score += 1
-    "You lose!"
+    "Sorry, you lost. Better luck next time."
   end
 
   def draw
-    ""
+    "It's a tie!"
   end
 end

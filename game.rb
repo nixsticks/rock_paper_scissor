@@ -3,12 +3,20 @@ Bundler.require
 
 module Game
   class RPS_App < Sinatra::Application
+
+    @game = GameEngine.new
+
     get '/throw' do
-      
+
     end
 
     get '/throw/:type' do
-      @move = params[:type]
+      @game.player.move = params[:type]
+      @game.computer.random_move
+
+      @message = @game.win_or_lose
+
+      erb :move
     end
 
 # ### Create the game
