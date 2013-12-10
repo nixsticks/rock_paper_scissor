@@ -11,14 +11,11 @@ class GameEngine
     when computer.move
       draw
     when "rock"
-      win if computer.move == "scissor"
-      lose if computer.move == "paper"
+      computer.move == "scissor" ? win : lose
     when "paper"
-      win if computer.move == "rock"
-      lose if computer.move == "scissor"
+      computer.move == "rock" ? win : lose
     when "scissor"
-      win if computer.move == "paper"
-      lose if computer.move == "rock"
+      computer.move == "paper" ? win : lose
     end
   end
 

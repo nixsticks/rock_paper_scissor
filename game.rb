@@ -9,12 +9,12 @@ module Game
     game = GameEngine.new
 
     get '/throw' do
-      "Hello"
+      erb :throw
     end
 
     get '/throw/:move' do
-      game.player.move = params[:move].to_s
-      game.computer.random_move
+      @player_move = game.player.move = params[:move].to_s
+      @computer_move = game.computer.random_move
 
       @message = game.win_or_lose
 

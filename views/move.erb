@@ -1,1 +1,10 @@
-<%= @message %>
+<div class="player_move">
+  <p>You chose <%= @player_move %></p>
+  <img src="/images/<%= @player_move %>.jpg">
+</div>
+<div class="computer_move">
+  <p>The computer chose <%= @computer_move %>.</p>
+  <img src="/images/<%= @computer_move %>.jpg">
+</div>
+<p><%= @message %></p>
+<p><a class="button throw" href="/throw">PLAY AGAIN?</a></p>
