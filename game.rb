@@ -3,8 +3,22 @@ Bundler.require
 
 module Game
   class RPS_App < Sinatra::Application
-    get '/' do
-
+    get '/throw' do
+      
     end
+
+    get '/throw/:type' do
+      @move = params[:type]
+    end
+
+# ### Create the game
+# Our app will be played at the path `/throw`. To play, a user will hit `/throw/:type`, for example: `/throw/rock` will play rock.
+
+# 1.  Define a route at `/throw` that responds to a get request and takes a single parameter called `:type`
+# 2.  This route should randomly generate a move by the computer.
+# 3.  The computer move and user move should be compared.
+# 4.  The results of the match should be displayed on the page.
+# 5.  
+
   end
 end
