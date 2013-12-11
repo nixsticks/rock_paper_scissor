@@ -2,16 +2,21 @@
 <html>
 <head>
   <title>The Best Rock Paper Scissor Ever</title>
+  <link href="/styles/normalize.css" type="text/css" rel="stylesheet"/>
+  <link href="/styles/styles.css" type="text/css" rel="stylesheet"/>
+  <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <h1>Rock Paper Scissor!</h1>
-  <h2>Do you have what it takes to win?</h2>
-  <%= yield %>
-  <div class="score_box player">
-    <p>Player: 0</p>
-  </div>
-  <div class="score_box computer">
-    <p>Computer: 0</p>
+  <div class="container">
+    <h1>Rock Paper Scissor!</h1>
+    <h2>Do you have what it takes to win?</h2>
+    <%= yield %>
+    <div class="score_box player">
+      <p>Player: 0</p>
+    </div>
+    <div class="score_box computer">
+      <p>Computer: 0</p>
+    </div>
   </div>
 </body>
 </html>

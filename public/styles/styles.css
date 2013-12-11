@@ -1,0 +1,36 @@
+body {
+  background-color: #4747FF;
+  font-family: "Nixie One", "Courier New", cursive;
+}
+
+.container {
+  margin: 50px;
+}
+
+.button {
+  display: block;
+  height: 50px;
+  width: 75px;
+  background-color: black;
+  color: #1414CC;
+  font-size: 50px;
+  border-radius: 20px;
+}
+
+.button p {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.rock {
+  float: left;
+  clear: after;
+}
+
+.scissor {
+
+}
+
+.paper {
+  
+}
